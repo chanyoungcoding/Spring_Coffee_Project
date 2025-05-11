@@ -6,10 +6,9 @@
     <title>메인 타이틀</title>
 </head>
 <body>
-<h2>부분 포함 단순 표현식</h2>
+<h2>유저 페이지</h2>
 <div th:replace="template/layout/base :: copy"></div>
 <h1>성공했다</h1>
-<h1 th:text="${data}">임시데이터</h1>
-<h2 th:text="${member}">member</h2>
+<h2 th:text="${member.name}">member</h2>
 </body>
 </html>
